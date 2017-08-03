@@ -1,0 +1,722 @@
+fileFormatVersion: 2
+guid: d4765e48ef9692843be9d4e36c89fb63
+timeCreated: 1456838314
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: BanoD
+    100002: Bone005
+    100004: Bone009
+    100006: Bone010
+    100008: Bone015
+    100010: Bone016
+    100012: Bone017
+    100014: BrazoDerecho
+    100016: BrazoIzquierdo
+    100018: Cabesa
+    100020: CinturonSumo001
+    100022: Cuerpo
+    100024: cuerpoYcabeza
+    100026: IK Chain001
+    100028: IK Chain002
+    100030: IK Chain003
+    100032: IK Chain004
+    100034: ManoI
+    100036: PiernaDerecha
+    100038: PiernaIzquierda
+    100040: //RootNode
+    400000: BanoD
+    400002: Bone005
+    400004: Bone009
+    400006: Bone010
+    400008: Bone015
+    400010: Bone016
+    400012: Bone017
+    400014: BrazoDerecho
+    400016: BrazoIzquierdo
+    400018: Cabesa
+    400020: CinturonSumo001
+    400022: Cuerpo
+    400024: cuerpoYcabeza
+    400026: IK Chain001
+    400028: IK Chain002
+    400030: IK Chain003
+    400032: IK Chain004
+    400034: ManoI
+    400036: PiernaDerecha
+    400038: PiernaIzquierda
+    400040: //RootNode
+    2300000: CinturonSumo001
+    3300000: CinturonSumo001
+    4300000: cuerpoYcabeza
+    4300002: CinturonSumo001
+    7400000: Brazos_Empuje
+    7400002: Brazos_IDLE
+    7400004: Piernas_Andar
+    7400006: Piernas_IDLE
+    7400008: Ataque
+    7400010: Celebracion
+    7400012: Caida
+    7400014: Take 0016
+    7400016: Take 0017
+    9500000: //RootNode
+    13700000: cuerpoYcabeza
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Brazos_Empuje
+      takeName: Take 001
+      firstFrame: 10
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cuerpo
+        weight: 1
+      - path: Cuerpo/BrazoDerecho
+        weight: 1
+      - path: Cuerpo/BrazoDerecho/Bone005
+        weight: 1
+      - path: Cuerpo/BrazoDerecho/Bone005/BanoD
+        weight: 1
+      - path: Cuerpo/BrazoIzquierdo
+        weight: 1
+      - path: Cuerpo/BrazoIzquierdo/Bone017
+        weight: 1
+      - path: Cuerpo/BrazoIzquierdo/Bone017/ManoI
+        weight: 1
+      - path: Cuerpo/Cabesa
+        weight: 1
+      - path: Cuerpo/PiernaDerecha
+        weight: 0
+      - path: Cuerpo/PiernaDerecha/Bone009
+        weight: 0
+      - path: Cuerpo/PiernaDerecha/Bone009/Bone010
+        weight: 0
+      - path: Cuerpo/PiernaIzquierda
+        weight: 0
+      - path: Cuerpo/PiernaIzquierda/Bone015
+        weight: 0
+      - path: Cuerpo/PiernaIzquierda/Bone015/Bone016
+        weight: 0
+      - path: cuerpoYcabeza
+        weight: 1
+      - path: IK Chain001
+        weight: 1
+      - path: IK Chain002
+        weight: 1
+      - path: IK Chain003
+        weight: 1
+      - path: IK Chain004
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Brazos_IDLE
+      takeName: Take 001
+      firstFrame: 40
+      lastFrame: 80
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cuerpo
+        weight: 0
+      - path: Cuerpo/BrazoDerecho
+        weight: 1
+      - path: Cuerpo/BrazoDerecho/Bone005
+        weight: 1
+      - path: Cuerpo/BrazoDerecho/Bone005/BanoD
+        weight: 1
+      - path: Cuerpo/BrazoIzquierdo
+        weight: 1
+      - path: Cuerpo/BrazoIzquierdo/Bone017
+        weight: 1
+      - path: Cuerpo/BrazoIzquierdo/Bone017/ManoI
+        weight: 1
+      - path: Cuerpo/Cabesa
+        weight: 0
+      - path: Cuerpo/PiernaDerecha
+        weight: 0
+      - path: Cuerpo/PiernaDerecha/Bone009
+        weight: 0
+      - path: Cuerpo/PiernaDerecha/Bone009/Bone010
+        weight: 0
+      - path: Cuerpo/PiernaIzquierda
+        weight: 0
+      - path: Cuerpo/PiernaIzquierda/Bone015
+        weight: 0
+      - path: Cuerpo/PiernaIzquierda/Bone015/Bone016
+        weight: 0
+      - path: cuerpoYcabeza
+        weight: 1
+      - path: IK Chain001
+        weight: 1
+      - path: IK Chain002
+        weight: 1
+      - path: IK Chain003
+        weight: 1
+      - path: IK Chain004
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Piernas_Andar
+      takeName: Take 001
+      firstFrame: 110
+      lastFrame: 130
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cuerpo
+        weight: 1
+      - path: Cuerpo/BrazoDerecho
+        weight: 0
+      - path: Cuerpo/BrazoDerecho/Bone005
+        weight: 0
+      - path: Cuerpo/BrazoDerecho/Bone005/BanoD
+        weight: 0
+      - path: Cuerpo/BrazoIzquierdo
+        weight: 0
+      - path: Cuerpo/BrazoIzquierdo/Bone017
+        weight: 0
+      - path: Cuerpo/BrazoIzquierdo/Bone017/ManoI
+        weight: 0
+      - path: Cuerpo/Cabesa
+        weight: 0
+      - path: Cuerpo/PiernaDerecha
+        weight: 1
+      - path: Cuerpo/PiernaDerecha/Bone009
+        weight: 1
+      - path: Cuerpo/PiernaDerecha/Bone009/Bone010
+        weight: 1
+      - path: Cuerpo/PiernaIzquierda
+        weight: 1
+      - path: Cuerpo/PiernaIzquierda/Bone015
+        weight: 1
+      - path: Cuerpo/PiernaIzquierda/Bone015/Bone016
+        weight: 1
+      - path: cuerpoYcabeza
+        weight: 1
+      - path: IK Chain001
+        weight: 1
+      - path: IK Chain002
+        weight: 1
+      - path: IK Chain003
+        weight: 1
+      - path: IK Chain004
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Piernas_IDLE
+      takeName: Take 001
+      firstFrame: 135
+      lastFrame: 175
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cuerpo
+        weight: 1
+      - path: Cuerpo/BrazoDerecho
+        weight: 0
+      - path: Cuerpo/BrazoDerecho/Bone005
+        weight: 0
+      - path: Cuerpo/BrazoDerecho/Bone005/BanoD
+        weight: 0
+      - path: Cuerpo/BrazoIzquierdo
+        weight: 0
+      - path: Cuerpo/BrazoIzquierdo/Bone017
+        weight: 0
+      - path: Cuerpo/BrazoIzquierdo/Bone017/ManoI
+        weight: 0
+      - path: Cuerpo/Cabesa
+        weight: 0
+      - path: Cuerpo/PiernaDerecha
+        weight: 1
+      - path: Cuerpo/PiernaDerecha/Bone009
+        weight: 1
+      - path: Cuerpo/PiernaDerecha/Bone009/Bone010
+        weight: 1
+      - path: Cuerpo/PiernaIzquierda
+        weight: 1
+      - path: Cuerpo/PiernaIzquierda/Bone015
+        weight: 1
+      - path: Cuerpo/PiernaIzquierda/Bone015/Bone016
+        weight: 1
+      - path: cuerpoYcabeza
+        weight: 1
+      - path: IK Chain001
+        weight: 1
+      - path: IK Chain002
+        weight: 1
+      - path: IK Chain003
+        weight: 1
+      - path: IK Chain004
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Ataque
+      takeName: Take 001
+      firstFrame: 180
+      lastFrame: 200
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cuerpo
+        weight: 1
+      - path: Cuerpo/BrazoDerecho
+        weight: 1
+      - path: Cuerpo/BrazoDerecho/Bone005
+        weight: 1
+      - path: Cuerpo/BrazoDerecho/Bone005/BanoD
+        weight: 1
+      - path: Cuerpo/BrazoIzquierdo
+        weight: 1
+      - path: Cuerpo/BrazoIzquierdo/Bone017
+        weight: 1
+      - path: Cuerpo/BrazoIzquierdo/Bone017/ManoI
+        weight: 1
+      - path: Cuerpo/Cabesa
+        weight: 1
+      - path: Cuerpo/PiernaDerecha
+        weight: 1
+      - path: Cuerpo/PiernaDerecha/Bone009
+        weight: 1
+      - path: Cuerpo/PiernaDerecha/Bone009/Bone010
+        weight: 1
+      - path: Cuerpo/PiernaIzquierda
+        weight: 1
+      - path: Cuerpo/PiernaIzquierda/Bone015
+        weight: 1
+      - path: Cuerpo/PiernaIzquierda/Bone015/Bone016
+        weight: 1
+      - path: cuerpoYcabeza
+        weight: 1
+      - path: IK Chain001
+        weight: 1
+      - path: IK Chain002
+        weight: 1
+      - path: IK Chain003
+        weight: 1
+      - path: IK Chain004
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Celebracion
+      takeName: Take 001
+      firstFrame: 210
+      lastFrame: 290
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cuerpo
+        weight: 1
+      - path: Cuerpo/BrazoDerecho
+        weight: 1
+      - path: Cuerpo/BrazoDerecho/Bone005
+        weight: 1
+      - path: Cuerpo/BrazoDerecho/Bone005/BanoD
+        weight: 1
+      - path: Cuerpo/BrazoIzquierdo
+        weight: 1
+      - path: Cuerpo/BrazoIzquierdo/Bone017
+        weight: 1
+      - path: Cuerpo/BrazoIzquierdo/Bone017/ManoI
+        weight: 1
+      - path: Cuerpo/Cabesa
+        weight: 1
+      - path: Cuerpo/PiernaDerecha
+        weight: 1
+      - path: Cuerpo/PiernaDerecha/Bone009
+        weight: 1
+      - path: Cuerpo/PiernaDerecha/Bone009/Bone010
+        weight: 1
+      - path: Cuerpo/PiernaIzquierda
+        weight: 1
+      - path: Cuerpo/PiernaIzquierda/Bone015
+        weight: 1
+      - path: Cuerpo/PiernaIzquierda/Bone015/Bone016
+        weight: 1
+      - path: cuerpoYcabeza
+        weight: 1
+      - path: IK Chain001
+        weight: 1
+      - path: IK Chain002
+        weight: 1
+      - path: IK Chain003
+        weight: 1
+      - path: IK Chain004
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Caida
+      takeName: Take 001
+      firstFrame: 300
+      lastFrame: 320
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cuerpo
+        weight: 1
+      - path: Cuerpo/BrazoDerecho
+        weight: 1
+      - path: Cuerpo/BrazoDerecho/Bone005
+        weight: 1
+      - path: Cuerpo/BrazoDerecho/Bone005/BanoD
+        weight: 1
+      - path: Cuerpo/BrazoIzquierdo
+        weight: 1
+      - path: Cuerpo/BrazoIzquierdo/Bone017
+        weight: 1
+      - path: Cuerpo/BrazoIzquierdo/Bone017/ManoI
+        weight: 1
+      - path: Cuerpo/Cabesa
+        weight: 1
+      - path: Cuerpo/PiernaDerecha
+        weight: 1
+      - path: Cuerpo/PiernaDerecha/Bone009
+        weight: 1
+      - path: Cuerpo/PiernaDerecha/Bone009/Bone010
+        weight: 1
+      - path: Cuerpo/PiernaIzquierda
+        weight: 1
+      - path: Cuerpo/PiernaIzquierda/Bone015
+        weight: 1
+      - path: Cuerpo/PiernaIzquierda/Bone015/Bone016
+        weight: 1
+      - path: cuerpoYcabeza
+        weight: 1
+      - path: IK Chain001
+        weight: 1
+      - path: IK Chain002
+        weight: 1
+      - path: IK Chain003
+        weight: 1
+      - path: IK Chain004
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Take 0016
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 320
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cuerpo
+        weight: 1
+      - path: Cuerpo/BrazoDerecho
+        weight: 1
+      - path: Cuerpo/BrazoDerecho/Bone005
+        weight: 1
+      - path: Cuerpo/BrazoDerecho/Bone005/BanoD
+        weight: 1
+      - path: Cuerpo/BrazoIzquierdo
+        weight: 1
+      - path: Cuerpo/BrazoIzquierdo/Bone017
+        weight: 1
+      - path: Cuerpo/BrazoIzquierdo/Bone017/ManoI
+        weight: 1
+      - path: Cuerpo/Cabesa
+        weight: 1
+      - path: Cuerpo/PiernaDerecha
+        weight: 1
+      - path: Cuerpo/PiernaDerecha/Bone009
+        weight: 1
+      - path: Cuerpo/PiernaDerecha/Bone009/Bone010
+        weight: 1
+      - path: Cuerpo/PiernaIzquierda
+        weight: 1
+      - path: Cuerpo/PiernaIzquierda/Bone015
+        weight: 1
+      - path: Cuerpo/PiernaIzquierda/Bone015/Bone016
+        weight: 1
+      - path: cuerpoYcabeza
+        weight: 1
+      - path: IK Chain001
+        weight: 1
+      - path: IK Chain002
+        weight: 1
+      - path: IK Chain003
+        weight: 1
+      - path: IK Chain004
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Take 0017
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 320
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cuerpo
+        weight: 1
+      - path: Cuerpo/BrazoDerecho
+        weight: 1
+      - path: Cuerpo/BrazoDerecho/Bone005
+        weight: 1
+      - path: Cuerpo/BrazoDerecho/Bone005/BanoD
+        weight: 1
+      - path: Cuerpo/BrazoIzquierdo
+        weight: 1
+      - path: Cuerpo/BrazoIzquierdo/Bone017
+        weight: 1
+      - path: Cuerpo/BrazoIzquierdo/Bone017/ManoI
+        weight: 1
+      - path: Cuerpo/Cabesa
+        weight: 1
+      - path: Cuerpo/PiernaDerecha
+        weight: 1
+      - path: Cuerpo/PiernaDerecha/Bone009
+        weight: 1
+      - path: Cuerpo/PiernaDerecha/Bone009/Bone010
+        weight: 1
+      - path: Cuerpo/PiernaIzquierda
+        weight: 1
+      - path: Cuerpo/PiernaIzquierda/Bone015
+        weight: 1
+      - path: Cuerpo/PiernaIzquierda/Bone015/Bone016
+        weight: 1
+      - path: cuerpoYcabeza
+        weight: 1
+      - path: IK Chain001
+        weight: 1
+      - path: IK Chain002
+        weight: 1
+      - path: IK Chain003
+        weight: 1
+      - path: IK Chain004
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

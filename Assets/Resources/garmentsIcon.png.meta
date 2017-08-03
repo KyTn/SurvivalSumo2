@@ -1,0 +1,485 @@
+fileFormatVersion: 2
+guid: cb2335fd6c369894c871960a152dedbe
+timeCreated: 1458319517
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: garmentsIcon_0
+    21300002: garmentsIcon_1
+    21300004: garmentsIcon_2
+    21300006: garmentsIcon_3
+    21300008: garmentsIcon_4
+    21300010: garmentsIcon_5
+    21300012: garmentsIcon_6
+    21300014: garmentsIcon_7
+    21300016: garmentsIcon_8
+    21300018: garmentsIcon_9
+    21300020: garmentsIcon_10
+    21300022: garmentsIcon_11
+    21300024: garmentsIcon_12
+    21300026: garmentsIcon_13
+    21300028: garmentsIcon_14
+    21300030: garmentsIcon_15
+    21300032: garmentsIcon_16
+    21300034: garmentsIcon_17
+    21300036: garmentsIcon_18
+    21300038: garmentsIcon_19
+    21300040: garmentsIcon_20
+    21300042: garmentsIcon_21
+    21300044: garmentsIcon_22
+    21300046: garmentsIcon_23
+    21300048: garmentsIcon_24
+    21300050: garmentsIcon_25
+    21300052: garmentsIcon_26
+    21300054: garmentsIcon_27
+    21300056: garmentsIcon_28
+    21300058: garmentsIcon_29
+    21300060: garmentsIcon_30
+    21300062: garmentsIcon_31
+    21300064: garmentsIcon_32
+    21300066: garmentsIcon_33
+    21300068: garmentsIcon_34
+    21300070: garmentsIcon_35
+    21300072: garmentsIcon_36
+    21300074: garmentsIcon_37
+    21300076: garmentsIcon_38
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: garmentsIcon_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 574.875
+        width: 82.125
+        height: 82.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: garmentsIcon_1
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 574.875
+        width: 82.125
+        height: 82.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: garmentsIcon_2
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 574.875
+        width: 82.125
+        height: 82.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: garmentsIcon_3
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 574.875
+        width: 82.125
+        height: 82.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: garmentsIcon_4
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 574.875
+        width: 82.125
+        height: 82.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: garmentsIcon_5
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 574.875
+        width: 82.125
+        height: 82.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: garmentsIcon_6
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 574.875
+        width: 82.125
+        height: 82.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: garmentsIcon_7
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 574.875
+        width: 82.125
+        height: 82.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: garmentsIcon_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 492.875
+        width: 82.125
+        height: 82.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: garmentsIcon_9
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 492.875
+        width: 82.125
+        height: 82.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: garmentsIcon_10
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 492.875
+        width: 82.125
+        height: 82.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: garmentsIcon_11
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 492.875
+        width: 82.125
+        height: 82.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: garmentsIcon_12
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 492.875
+        width: 82.125
+        height: 82.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: garmentsIcon_13
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 492.875
+        width: 82.125
+        height: 82.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: garmentsIcon_14
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 492.875
+        width: 82.125
+        height: 82.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: garmentsIcon_15
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 492.875
+        width: 82.125
+        height: 82.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: garmentsIcon_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 410.875
+        width: 82.125
+        height: 82.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: garmentsIcon_17
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 410.875
+        width: 82.125
+        height: 82.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: garmentsIcon_18
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 410.875
+        width: 82.125
+        height: 82.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: garmentsIcon_19
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 410.875
+        width: 82.125
+        height: 82.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: garmentsIcon_20
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 410.875
+        width: 82.125
+        height: 82.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: garmentsIcon_21
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 410.875
+        width: 82.125
+        height: 82.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: garmentsIcon_22
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 410.875
+        width: 82.125
+        height: 82.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: garmentsIcon_23
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 410.875
+        width: 82.125
+        height: 82.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: garmentsIcon_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 328.875
+        width: 82.125
+        height: 82.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: garmentsIcon_25
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 328.875
+        width: 82.125
+        height: 82.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: garmentsIcon_26
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 328.875
+        width: 82.125
+        height: 82.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: garmentsIcon_27
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 328.875
+        width: 82.125
+        height: 82.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: garmentsIcon_28
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 328.875
+        width: 82.125
+        height: 82.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: garmentsIcon_29
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 328.875
+        width: 82.125
+        height: 82.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: garmentsIcon_30
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 328.875
+        width: 82.125
+        height: 82.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: garmentsIcon_31
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 328.875
+        width: 82.125
+        height: 82.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: garmentsIcon_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 246.875
+        width: 82.125
+        height: 82.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: garmentsIcon_33
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 246.875
+        width: 82.125
+        height: 82.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: garmentsIcon_34
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 246.875
+        width: 82.125
+        height: 82.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: garmentsIcon_35
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 246.875
+        width: 82.125
+        height: 82.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: garmentsIcon_36
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 246.875
+        width: 82.125
+        height: 82.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: garmentsIcon_37
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 246.875
+        width: 82.125
+        height: 82.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: garmentsIcon_38
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 246.875
+        width: 82.125
+        height: 82.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,169 @@
+fileFormatVersion: 2
+guid: feca59de0a240d74c8f810a6cddc8d36
+timeCreated: 1456398300
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: BanoD
+    100002: BanoD 1
+    100004: Bone005
+    100006: Bone005 1
+    100008: Bone009
+    100010: Bone009 1
+    100012: Bone010
+    100014: Bone010 1
+    100016: Bone015
+    100018: Bone015 1
+    100020: Bone016
+    100022: Bone016 1
+    100024: Bone017
+    100026: Bone017 1
+    100028: Box001
+    100030: Box003
+    100032: BrazoDerecho
+    100034: BrazoDerecho 1
+    100036: BrazoIzquierdo
+    100038: BrazoIzquierdo 1
+    100040: Cabesa
+    100042: Cabesa 1
+    100044: Chaqueta
+    100046: Cuerpo
+    100048: Cuerpo 1
+    100050: Cuerpo 2
+    100052: cuerpoYcabeza
+    100054: Cylinder002
+    100056: IK Chain001
+    100058: IK Chain001 1
+    100060: IK Chain002
+    100062: IK Chain002 1
+    100064: IK Chain003
+    100066: IK Chain003 1
+    100068: IK Chain004
+    100070: IK Chain004 1
+    100072: ManoI
+    100074: ManoI 1
+    100076: PiernaDerecha
+    100078: PiernaDerecha 1
+    100080: PiernaIzquierda
+    100082: PiernaIzquierda 1
+    100084: //RootNode
+    400000: BanoD
+    400002: BanoD 1
+    400004: Bone005
+    400006: Bone005 1
+    400008: Bone009
+    400010: Bone009 1
+    400012: Bone010
+    400014: Bone010 1
+    400016: Bone015
+    400018: Bone015 1
+    400020: Bone016
+    400022: Bone016 1
+    400024: Bone017
+    400026: Bone017 1
+    400028: Box001
+    400030: Box003
+    400032: BrazoDerecho
+    400034: BrazoDerecho 1
+    400036: BrazoIzquierdo
+    400038: BrazoIzquierdo 1
+    400040: Cabesa
+    400042: Cabesa 1
+    400044: Chaqueta
+    400046: Cuerpo
+    400048: Cuerpo 1
+    400050: Cuerpo 2
+    400052: cuerpoYcabeza
+    400054: Cylinder002
+    400056: IK Chain001
+    400058: IK Chain001 1
+    400060: IK Chain002
+    400062: IK Chain002 1
+    400064: IK Chain003
+    400066: IK Chain003 1
+    400068: IK Chain004
+    400070: IK Chain004 1
+    400072: ManoI
+    400074: ManoI 1
+    400076: PiernaDerecha
+    400078: PiernaDerecha 1
+    400080: PiernaIzquierda
+    400082: PiernaIzquierda 1
+    400084: //RootNode
+    2300000: Cylinder002
+    2300002: //RootNode
+    3300000: Cylinder002
+    3300002: //RootNode
+    4300000: cuerpoYcabeza
+    4300002: Box003
+    4300004: Chaqueta
+    4300006: Cylinder002
+    9500000: //RootNode
+    13700000: Box003
+    13700002: Chaqueta
+    13700004: cuerpoYcabeza
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
