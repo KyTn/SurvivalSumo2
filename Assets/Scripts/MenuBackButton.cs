@@ -17,13 +17,13 @@ public class MenuBackButton : MonoBehaviour {
         {
             if (ExitMenuShown)
             {
-                GEAnimSystem.Instance.MoveOut(ExitMenu.transform, true);
+                //GEAnimSystem.Instance.MoveOut(ExitMenu.transform, true);
                 ExitMenuShown = false;
             }
             else
             {
                 ExitMenu.SetActive(true);
-                GEAnimSystem.Instance.MoveIn(ExitMenu.transform, true);
+                //GEAnimSystem.Instance.MoveIn(ExitMenu.transform, true);
                 ExitMenuShown = true;
             }
         }
@@ -37,7 +37,7 @@ public class MenuBackButton : MonoBehaviour {
 
     public void Cancel()
     {
-        GEAnimSystem.Instance.MoveOut(ExitMenu.transform, true);
+        //GEAnimSystem.Instance.MoveOut(ExitMenu.transform, true);
         ExitMenuShown = false;
     }
 }

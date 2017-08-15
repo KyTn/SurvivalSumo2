@@ -26,9 +26,9 @@ public class ChangeGarmentsList : MonoBehaviour {
 	{	button = 1;
 		StartCoroutine (WaitForCharge(button));
 		
-		panel_1.GetComponent<GEAnim> ().MoveOut ();
+		//panel_1.GetComponent<GEAnim> ().MoveOut ();
 		
-		panel_1.GetComponent<GEAnim> ().MoveIn();;
+		//panel_1.GetComponent<GEAnim> ().MoveIn();;
 		//panel_2.SetActive (false);
 		
 		
@@ -38,20 +38,20 @@ public class ChangeGarmentsList : MonoBehaviour {
 		StartCoroutine (WaitForCharge(button));
 
 	
-		panel_1.GetComponent<GEAnim> ().MoveOut ();
+		//panel_1.GetComponent<GEAnim> ().MoveOut ();
 
 
 
-		panel_1.GetComponent<GEAnim> ().MoveIn ();
+		//panel_1.GetComponent<GEAnim> ().MoveIn ();
 	
 	}
 	public void ButtonPressed_3()
 	{	button = 3;
 		StartCoroutine (WaitForCharge(button));
 		
-		panel_1.GetComponent<GEAnim> ().MoveOut ();
+		//panel_1.GetComponent<GEAnim> ().MoveOut ();
 		
-		panel_1.GetComponent<GEAnim> ().MoveIn();;
+		//panel_1.GetComponent<GEAnim> ().MoveIn();;
 		//panel_2.SetActive (false);
 		
 		
@@ -61,9 +61,9 @@ public class ChangeGarmentsList : MonoBehaviour {
 	{	button = 4;
 		StartCoroutine (WaitForCharge(button));
 		
-		panel_1.GetComponent<GEAnim> ().MoveOut ();
+		//panel_1.GetComponent<GEAnim> ().MoveOut ();
 		
-		panel_1.GetComponent<GEAnim> ().MoveIn();;
+		//panel_1.GetComponent<GEAnim> ().MoveIn();;
 		//panel_2.SetActive (false);
 		
 		
@@ -72,9 +72,9 @@ public class ChangeGarmentsList : MonoBehaviour {
 	{	button = 5;
 		StartCoroutine (WaitForCharge(button));
 		
-		panel_1.GetComponent<GEAnim> ().MoveOut ();
+		//panel_1.GetComponent<GEAnim> ().MoveOut ();
 		
-		panel_1.GetComponent<GEAnim> ().MoveIn();;
+		//panel_1.GetComponent<GEAnim> ().MoveIn();;
 		//panel_2.SetActive (false);
 		
 		
