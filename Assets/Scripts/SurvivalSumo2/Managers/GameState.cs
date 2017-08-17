@@ -15,10 +15,20 @@ public class GameState : MonoBehaviour {
         set { PlayerPrefs.SetFloat("XP", value); }
     }
 
+    public float nextLevelXP
+    {
+        get { return GetNextLevelXP(); }
+    }
+
+    private float GetNextLevelXP()
+    {
+        return PlayerLevel * 50;
+    }
 
     public int PlayerLevel
     {
-        get { return GetLevelOfXP(XP); }
+        get { return PlayerPrefs.GetInt("PlayerLevel", 0); }
+        set { PlayerPrefs.SetInt("PlayerLevel", value); }
     }
 
     // Cálculo del nivel en funcion de la XP siguiendo la progresión 50, 100, 150, 200 ... 

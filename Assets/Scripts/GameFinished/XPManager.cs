@@ -25,7 +25,7 @@ public class XPManager : MonoBehaviour {
         //currentLevelText.text = "Level " + PlayerPrefs.GetInt("PlayerLevel", 1);
         //nextLevelText.text = "Level " + (PlayerPrefs.GetInt("PlayerLevel", 1)+1);
 
-	    xpSlider.maxValue = xpForNextLevel[PlayerPrefs.GetInt("PlayerLevel", 1)-1];
+        xpSlider.maxValue = GameState.instance.nextLevelXP;
         xpSlider.value = GameState.instance.XP;
 
         float multiplier = 1;
@@ -43,13 +43,14 @@ public class XPManager : MonoBehaviour {
             GameState.instance.XP += 5;
         }
         finalXP = GameState.instance.XP;
-        if (GameState.instance.XP >= xpSlider.maxValue)
+        if (GameState.instance.XP >= GameState.instance.nextLevelXP)
         {
             //PlayerPrefs.SetInt("PlayerLevel", PlayerPrefs.GetInt("PlayerLevel", 1) + 1);
+            GameState.instance.PlayerLevel++;
             LevelUp = true;
             //nextLevelText.color = Color.yellow;
             levelText.color = Color.red;
-            PlayerPrefs.SetFloat("XP", 0);
+            //PlayerPrefs.SetFloat("XP", 0);
         }
 
         PlayerPrefs.SetFloat("newXP", 0);
