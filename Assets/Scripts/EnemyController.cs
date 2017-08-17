@@ -43,7 +43,7 @@ public class EnemyController : MonoBehaviour
 
     void OnDisable()
     {
-        FightManager.instance.characterDies += SomeoneDied;
+        FightManager.instance.characterDies -= SomeoneDied;
     }
 
     void SomeoneDied(Transform t)

@@ -42,28 +42,24 @@ public class FightManager : MonoBehaviour {
         Instantiate(Player, SpawnPoint.position, SpawnPoint.rotation);
         int enemies = PlayerPrefs.GetInt("numEnemies", 3);
         initialEnemies = enemies;
-        int maxEnemyLevel = PlayerPrefs.GetInt("PlayerLevel", 1);
+        int maxEnemyLevel = GameState.instance.PlayerLevel;
         for (int i = 0; i < enemies; i++)
         {
             SpawnSystem.Rotate(new Vector3(0, 360 / (enemies+1), 0));
             Instantiate(Enemies[Random.Range(0,maxEnemyLevel)], SpawnPoint.position, SpawnPoint.rotation);
         }
 
-        PlayerPrefs.SetInt("GamesThisSession", PlayerPrefs.GetInt("GamesThisSession", 0) + 1);
+        GameState.instance.GamesThisSession += 1;
+        //PlayerPrefs.SetInt("GamesThisSession", PlayerPrefs.GetInt("GamesThisSession", 0) + 1);
 
         Analytics.CustomEvent("StartBattle", new Dictionary<string, object>
 			                      {
 				{ "NumEnemies", enemies+"n" },
-                {"PlayerLevel", PlayerPrefs.GetInt("PlayerLevel", 1)+"L"},
-                {"TimesPlayedThisSession",PlayerPrefs.GetInt("GamesThisSession", 0)}
+                {"PlayerLevel", GameState.instance.PlayerLevel+"L"},
+                {"TimesPlayedThisSession",GameState.instance.GamesThisSession}
 			});
     }
 
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 
     public void SomeoneDied(Transform character, bool thePlayerDied = false)
     {
@@ -76,12 +72,15 @@ public class FightManager : MonoBehaviour {
         if (thePlayerDied)
         {
             playerIsAlive = false;
-            PlayerPrefs.SetInt("LastGameWon", 0);
+            GameState.instance.LastGameWon = 0;
+            //PlayerPrefs.SetInt("LastGameWon", 0);
             EndGame();
         }else if (charactersAlive == 1)
         {
-            PlayerPrefs.SetFloat("newXP", 5*initialEnemies);
-            PlayerPrefs.SetInt("LastGameWon", 1);
+            GameState.instance.XPEarnedLastGame = 5 * initialEnemies;
+            //PlayerPrefs.SetFloat("newXP", 5*initialEnemies);
+            GameState.instance.LastGameWon = 1;
+            //PlayerPrefs.SetInt("LastGameWon", 1);
             EndGame();
         }
     }

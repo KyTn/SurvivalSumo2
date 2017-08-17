@@ -21,31 +21,31 @@ public class XPManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        levelText.text = PlayerPrefs.GetInt("PlayerLevel", 1).ToString();
+        levelText.text = GameState.instance.PlayerLevel.ToString();
         //currentLevelText.text = "Level " + PlayerPrefs.GetInt("PlayerLevel", 1);
         //nextLevelText.text = "Level " + (PlayerPrefs.GetInt("PlayerLevel", 1)+1);
 
 	    xpSlider.maxValue = xpForNextLevel[PlayerPrefs.GetInt("PlayerLevel", 1)-1];
-        xpSlider.value = PlayerPrefs.GetFloat("XP", 0);
+        xpSlider.value = GameState.instance.XP;
 
         float multiplier = 1;
-        if (PlayerPrefs.GetInt("LastDayPlayed", -1) == DateTime.Now.DayOfYear && PlayerPrefs.GetInt("LastDayMultiplied", -1)!= DateTime.Now.DayOfYear)
+        if (GameState.instance.LastDayOfYearPlayed == DateTime.Now.DayOfYear && GameState.instance.LastDayOfYearMultiplied != DateTime.Now.DayOfYear)
         {
             multiplier = 2;
-            PlayerPrefs.SetInt("LastDayMultiplied", DateTime.Now.DayOfYear);
+            GameState.instance.LastDayOfYearMultiplied = DateTime.Now.DayOfYear;
         }
-        if (PlayerPrefs.GetInt("LastGameWon", 0) == 1)
+        if (GameState.instance.LastGameWon == 1)
         {
-            PlayerPrefs.SetFloat("XP", PlayerPrefs.GetFloat("XP", 0) + (PlayerPrefs.GetFloat("newXP", 0) * multiplier));
+            GameState.instance.XP += GameState.instance.XPEarnedLastGame * multiplier;
         }
         else
         {
-            PlayerPrefs.SetFloat("XP", PlayerPrefs.GetFloat("XP", 0) + 5);
+            GameState.instance.XP += 5;
         }
-        finalXP = PlayerPrefs.GetFloat("XP", 0);
-        if (PlayerPrefs.GetFloat("XP", 0) >= xpSlider.maxValue)
+        finalXP = GameState.instance.XP;
+        if (GameState.instance.XP >= xpSlider.maxValue)
         {
-            PlayerPrefs.SetInt("PlayerLevel", PlayerPrefs.GetInt("PlayerLevel", 1) + 1);
+            //PlayerPrefs.SetInt("PlayerLevel", PlayerPrefs.GetInt("PlayerLevel", 1) + 1);
             LevelUp = true;
             //nextLevelText.color = Color.yellow;
             levelText.color = Color.red;
