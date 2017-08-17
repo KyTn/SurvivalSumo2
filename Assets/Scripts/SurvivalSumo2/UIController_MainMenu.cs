@@ -8,7 +8,7 @@ public class UIController_MainMenu : MonoBehaviour {
     public GameObject MainCam;
     public Transform Cam_To_Inventario, Cam_To_Main, Cam_To_Play, Cam_To_Botin;
 
-    public RectTransform DownButtons, Inventario, FirstVictoryAds, MusicBy, ReallyExit, Levels, TopInfo, Back_button;
+    public RectTransform DownButtons, Inventario, FirstVictoryAds, MusicBy, ReallyExit, Levels, TopInfo, Back_button, Botin;
 
 
 
@@ -48,6 +48,7 @@ public class UIController_MainMenu : MonoBehaviour {
         FirstVictoryAds.gameObject.SetActive(false);
         MusicBy.gameObject.SetActive(false);
         ReallyExit.gameObject.SetActive(false);
+       // Botin.gameObject.SetActive(false);
         Levels.gameObject.SetActive(true); // <-----------
         Back_button.gameObject.SetActive(true); //<----------
     }
@@ -65,7 +66,8 @@ public class UIController_MainMenu : MonoBehaviour {
         MusicBy.DOAnchorPos(Vector2.down * 200, 0.4f);
         ReallyExit.DOAnchorPos(Vector2.left * 1000, 0.4f);
         Levels.DOAnchorPos(Vector2.down * 600, 0.4f);
-        Back_button.DOAnchorPos(Vector2.zero, 0.4f);//<----------
+        Back_button.DOAnchorPos(Vector2.zero, 0.4f);
+        Botin.DOAnchorPos(Vector2.zero, 0.4f);//<----------
 
         // Desactivando los paneles que no van a usarse en el start
         DownButtons.gameObject.SetActive(false);
@@ -74,7 +76,8 @@ public class UIController_MainMenu : MonoBehaviour {
         MusicBy.gameObject.SetActive(false);
         ReallyExit.gameObject.SetActive(false);
         Levels.gameObject.SetActive(false);
-        Back_button.gameObject.SetActive(true); //<----------
+        Back_button.gameObject.SetActive(true);
+        //Botin.gameObject.SetActive(true);//<----------
     }
 
     public void GOTO_Inventario()
@@ -98,6 +101,7 @@ public class UIController_MainMenu : MonoBehaviour {
         MusicBy.gameObject.SetActive(false);
         ReallyExit.gameObject.SetActive(false);
         Levels.gameObject.SetActive(false);
+       // Botin.gameObject.SetActive(false);
         Back_button.gameObject.SetActive(true); //<----------
     }
 
@@ -133,6 +137,7 @@ public class UIController_MainMenu : MonoBehaviour {
         ReallyExit.gameObject.SetActive(false);
         Levels.gameObject.SetActive(false);
         Back_button.gameObject.SetActive(false);
+       // Botin.gameObject.SetActive(false);
     }
 
 
