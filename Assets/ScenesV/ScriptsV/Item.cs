@@ -12,7 +12,6 @@ public class Item {
 	public ItemTypePart itemType_P;
 	public ItemTypeSet itemType_S;
 	public string item_Skill;
-	public bool item_acquired;
 			
 
 
@@ -30,16 +29,12 @@ public class Item {
 	
 
 	}
-	public Item(string name, string rarity,string skill,ItemTypePart type_P,Sprite icon, bool acquired){
+	public Item(string name, string rarity,string skill,ItemTypePart type_P,Sprite icon){
 		itemName = name;
 		itemRarity = rarity;
 		item_Skill = skill;
 		itemType_P = type_P;
-
-		//itemType_P = type_P;
-
 		itemIcon = icon;
-		item_acquired=acquired;
 
 
 	}

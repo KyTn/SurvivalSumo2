@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameState : MonoBehaviour {
+public class GameState : MonoBehaviour
+{
 
     public static GameState instance;
 
-    void Start(){instance = this;}
+    void Start() { instance = this; }
 
 
     public float XP
@@ -38,9 +39,9 @@ public class GameState : MonoBehaviour {
         int level = 1;
         while (_XP > 0)
         {
-            if (_XP > (level-1) * 50 + 50)
+            if (_XP > (level - 1) * 50 + 50)
             {
-                _XP -= (level-1) * 50 + 5;
+                _XP -= (level - 1) * 50 + 5;
                 level++;
             }
         }
@@ -79,5 +80,54 @@ public class GameState : MonoBehaviour {
         get { return PlayerPrefs.GetFloat("GamesThisSession", 0); }
         set { PlayerPrefs.SetFloat("GamesThisSession", value); }
     }
+
+
+    #region ITEMS
+
+    private string[] itemNames = {
+        "Cowboy hat","Cowboy jacket","Cowboy boots", 
+        "Fighting Mask","Boxing gloves","Boxing boots",
+        "Knight helmet","Knight sword","Knight footwear",
+        "Pirate hat","Parrot","Pirate jacket", "Pirate boots",
+        "Chef hat","Chef jacket","Frying pan",
+        "Ballet ring","Ballet skirt","Ballet shoes",
+        "Ears of cat","Paw cat", "Cat tail", 
+        "Hair Super Saiyan", "Kimono Super Saiyan", "Kame Ame Wave",  
+        "Angel Halo","Angel wings","Mercury boots" 
+    };
+
+    public Dictionary<string, int> _itemPartsCollected;
+    public Dictionary<string, int> itemPartsCollected
+    {
+        get
+        {
+            foreach(string id in itemNames){
+                if (!_itemPartsCollected.ContainsKey(id))
+                {
+                    _itemPartsCollected.Add(id, PlayerPrefs.GetInt(id+"_Parts", 0));
+                }
+            }
+            return _itemPartsCollected;
+        }
+    }
+
+
+    public Dictionary<string, bool> _ItemsObtained;
+    public Dictionary<string, bool> ItemsObtained
+    {
+        get
+        {
+            foreach (string id in itemNames)
+            {
+                if (!ItemsObtained.ContainsKey(id))
+                {
+                    _ItemsObtained.Add(id, PlayerPrefs.GetInt(id + "_Obtained", 0) == 1);
+                }
+            }
+            return _ItemsObtained;
+        }
+    }
+
+    #endregion
 
 }
