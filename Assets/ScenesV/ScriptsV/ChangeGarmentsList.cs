@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 
 public class ChangeGarmentsList : MonoBehaviour {
-
+    /*
 	public GameObject panel_1;
 	int button;
 	

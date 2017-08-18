@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class Inventory : MonoBehaviour {
-
+    
 	RectTransform my_rtt;
 	public	RectTransform containers;
 	public List<Item>listNew=new List<Item>();
@@ -13,7 +13,7 @@ public class Inventory : MonoBehaviour {
 	int n=0 ;
 	int k=0;
 	//bool listCreated=false;
-
+    /*
 	void Awake(){
 		my_rtt = GetComponent<RectTransform> ();
 
@@ -165,6 +165,8 @@ public class Inventory : MonoBehaviour {
 
 
 //	--------------
+
+    /*
 public	void LoadDatesInPanel_Head(){
 		int j = 0;
 		k = n;
@@ -338,5 +340,5 @@ public	void LoadDatesInPanel_Feet(){
 			y--;
 		}
 		}
-
+    */
 }

@@ -84,7 +84,7 @@ public class GameState : MonoBehaviour
 
     #region ITEMS
 
-    private string[] itemNames = {
+    public string[] itemNames = {
         "Cowboy hat","Cowboy jacket","Cowboy boots", 
         "Fighting Mask","Boxing gloves","Boxing boots",
         "Knight helmet","Knight sword","Knight footwear",
