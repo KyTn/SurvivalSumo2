@@ -7,8 +7,15 @@ public class GameState : MonoBehaviour
 
     public static GameState instance;
 
-    void Start() { instance = this; }
+    void Awake() { 
+        instance = this;
+        _itemPartsCollected = new Dictionary<string, int>(); itemPartsCollected.ContainsKey("");
+        _ItemsObtained = new Dictionary<string, bool>(); ItemsObtained.ContainsKey("");
+        _PlayerEquip = new Dictionary<Item.ItemTypePart, string>(); PlayerEquip.ContainsKey(Item.ItemTypePart.Back);
+    }
 
+
+    #region XP & PlayerLevel
 
     public float XP
     {
@@ -49,6 +56,19 @@ public class GameState : MonoBehaviour
         return level;
     }
 
+
+    // XP que ha ganado en la partida que acaba de terminar. 
+    public float XPEarnedLastGame
+    {
+        get { return PlayerPrefs.GetFloat("newXP", 0); }
+        set { PlayerPrefs.SetFloat("newXP", value); }
+    }
+
+    #endregion
+
+
+    #region Times played, etc
+
     public int LastDayOfYearPlayed
     {
         get { return PlayerPrefs.GetInt("LastDayPlayed", -1); }
@@ -67,12 +87,6 @@ public class GameState : MonoBehaviour
         set { PlayerPrefs.SetInt("LastGameWon", value); }
     }
 
-    // XP que ha ganado en la partida que acaba de terminar. 
-    public float XPEarnedLastGame
-    {
-        get { return PlayerPrefs.GetFloat("newXP", 0); }
-        set { PlayerPrefs.SetFloat("newXP", value); }
-    }
 
     // Nº de juegos que se han jugado en esta sesion
     public float GamesThisSession
@@ -80,6 +94,9 @@ public class GameState : MonoBehaviour
         get { return PlayerPrefs.GetFloat("GamesThisSession", 0); }
         set { PlayerPrefs.SetFloat("GamesThisSession", value); }
     }
+
+
+    #endregion 
 
 
     #region ITEMS
@@ -128,6 +145,71 @@ public class GameState : MonoBehaviour
         }
     }
 
+
+    private Dictionary<Item.ItemTypePart, string> _PlayerEquip;
+    public Dictionary<Item.ItemTypePart, string> PlayerEquip
+    {
+        get
+        {
+            string backid = PlayerPrefs.GetString(Item.ItemTypePart.Back + "", "");
+            string bodyid = PlayerPrefs.GetString(Item.ItemTypePart.Body + "", "");
+            string feetid = PlayerPrefs.GetString(Item.ItemTypePart.Feet + "", "");
+            string handsid = PlayerPrefs.GetString(Item.ItemTypePart.Hands + "", "");
+            string headid = PlayerPrefs.GetString(Item.ItemTypePart.Head + "", "");
+
+            if (backid != "" && !_PlayerEquip.ContainsKey(Item.ItemTypePart.Back))
+            {
+                _PlayerEquip.Add(Item.ItemTypePart.Back, backid);
+            }
+
+            if (bodyid != "" && !_PlayerEquip.ContainsKey(Item.ItemTypePart.Body))
+            {
+                _PlayerEquip.Add(Item.ItemTypePart.Body, bodyid);
+            }
+
+            if (feetid != "" && !_PlayerEquip.ContainsKey(Item.ItemTypePart.Feet))
+            {
+                _PlayerEquip.Add(Item.ItemTypePart.Feet, feetid);
+            }
+
+            if (handsid != "" && !_PlayerEquip.ContainsKey(Item.ItemTypePart.Hands))
+            {
+                _PlayerEquip.Add(Item.ItemTypePart.Hands, handsid);
+            }
+
+            if (headid != "" && !_PlayerEquip.ContainsKey(Item.ItemTypePart.Head))
+            {
+                _PlayerEquip.Add(Item.ItemTypePart.Head, headid);
+            }
+
+            return _PlayerEquip;
+        }
+    }
     #endregion
+
+
+
+
+    public void Save()
+    {
+        foreach (string id in _itemPartsCollected.Keys)
+        {
+            PlayerPrefs.SetInt(id + "_Parts", _itemPartsCollected[id]);
+        }
+
+        foreach (string id in _ItemsObtained.Keys)
+        {
+            PlayerPrefs.SetInt(id + "_Obtained", _ItemsObtained[id] ? 1 : 0);
+        }
+
+        foreach (Item.ItemTypePart id in _PlayerEquip.Keys)
+        {
+            PlayerPrefs.SetString(id + "", _PlayerEquip[id]);
+        }
+        
+
+    }
+
+
 
 }

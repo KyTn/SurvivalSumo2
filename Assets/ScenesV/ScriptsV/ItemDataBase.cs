@@ -22,9 +22,10 @@ public class ItemDataBase : MonoBehaviour
         }
 
         instanceData = this;
+        Init();
     }
 
-    void Start()
+    void Init()
     {
 
         Sprite[] spriteIcon = Resources.LoadAll<Sprite>("garmentsIcon");
