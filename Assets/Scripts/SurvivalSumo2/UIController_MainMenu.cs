@@ -10,7 +10,7 @@ public class UIController_MainMenu : MonoBehaviour {
 
     public RectTransform DownButtons, Inventario, FirstVictoryAds, MusicBy, ReallyExit, Levels, TopInfo, Back_button, Botin;
 
-
+    public Animator botin;
 
 
 
@@ -146,6 +146,21 @@ public class UIController_MainMenu : MonoBehaviour {
     public void UpdateTopInfo(int playerLevel, float actualLevelPercent, int gold )
     {
 
+    }
+
+    public void compraCofre()
+    {
+
+    }
+
+    public void abreBotin (int i)
+    {
+        botin.SetInteger("open", 1);
+    }
+
+    public void recogeBotin(int i)
+    {
+        botin.SetInteger("open", 0);
     }
 
 
