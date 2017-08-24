@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-        FightManager.instance.charactersAlive++;
+        LevelController.instance.charactersAlive++;
 	}
 	
 	// Update is called once per frame

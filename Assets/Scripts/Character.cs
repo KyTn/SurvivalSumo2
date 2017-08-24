@@ -98,7 +98,7 @@ public class Character : MonoBehaviour {
     public void Die()
     {
 
-        FightManager.instance.SomeoneDied(this.transform, playerControlled);
+        LevelController.instance.SomeoneDied(this.transform, playerControlled);
 
         Destroy(transform.parent.gameObject, 1);
     }

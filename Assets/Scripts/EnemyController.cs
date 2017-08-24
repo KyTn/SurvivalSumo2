@@ -22,7 +22,7 @@ public class EnemyController : MonoBehaviour
     {
         targetTransform = target.transform;
 
-        FightManager.instance.charactersAlive++;
+        LevelController.instance.charactersAlive++;
         if (fighters.Count == 0)
         {
             GameObject[] balls = GameObject.FindGameObjectsWithTag("ball");
@@ -37,13 +37,13 @@ public class EnemyController : MonoBehaviour
     }
     void OnEnable()
     {
-        FightManager.instance.characterDies += SomeoneDied;
+        LevelController.instance.characterDies += SomeoneDied;
     }
 
 
     void OnDisable()
     {
-        FightManager.instance.characterDies -= SomeoneDied;
+        LevelController.instance.characterDies -= SomeoneDied;
     }
 
     void SomeoneDied(Transform t)

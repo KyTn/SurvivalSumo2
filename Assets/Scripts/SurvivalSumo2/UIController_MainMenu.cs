@@ -163,6 +163,11 @@ public class UIController_MainMenu : MonoBehaviour {
         botin.SetInteger("open", 0);
     }
 
+    public void chosenLevel(int i)
+    {
+        GameManager.instance.level = i;
+    }
+
 
 
 
