@@ -7,11 +7,54 @@ public class GameState : MonoBehaviour
 
     public static GameState instance;
 
-    void Awake() { 
+    void Awake() {
         instance = this;
-        _itemPartsCollected = new Dictionary<string, int>(); itemPartsCollected.ContainsKey("");
-        _ItemsObtained = new Dictionary<string, bool>(); ItemsObtained.ContainsKey("");
+        DontDestroyOnLoad(gameObject);
+
+
+        _itemPartsCollected = new Dictionary<string, int>();
+        foreach (string id in itemNames)
+        {
+            if (!_itemPartsCollected.ContainsKey(id))
+            {
+                _itemPartsCollected.Add(id, PlayerPrefs.GetInt(id + "_Parts", 0));
+            }
+        }
+
+
+        _itemPartsTotal = new Dictionary<string, int>();
+        foreach (string id in itemNames)
+        {
+            if (!_itemPartsTotal.ContainsKey(id))
+            {
+                _itemPartsTotal.Add(id, PlayerPrefs.GetInt(id + "_Total", 0));
+            }
+        }
+
+
+        _ItemsObtained = new Dictionary<string, bool>();
+        foreach (string id in itemNames)
+        {
+            if (!ItemsObtained.ContainsKey(id))
+            {
+                _ItemsObtained.Add(id, PlayerPrefs.GetInt(id + "_Obtained", 0) == 1);
+            }
+        }
+
+
         _PlayerEquip = new Dictionary<Item.ItemTypePart, string>(); PlayerEquip.ContainsKey(Item.ItemTypePart.Back);
+        string backid = PlayerPrefs.GetString(Item.ItemTypePart.Back + "", "");
+        string bodyid = PlayerPrefs.GetString(Item.ItemTypePart.Body + "", "");
+        string feetid = PlayerPrefs.GetString(Item.ItemTypePart.Feet + "", "");
+        string handsid = PlayerPrefs.GetString(Item.ItemTypePart.Hands + "", "");
+        string headid = PlayerPrefs.GetString(Item.ItemTypePart.Head + "", "");
+
+        if (backid != "" && !_PlayerEquip.ContainsKey(Item.ItemTypePart.Back)) { _PlayerEquip.Add(Item.ItemTypePart.Back, backid); }
+        if (bodyid != "" && !_PlayerEquip.ContainsKey(Item.ItemTypePart.Body)) { _PlayerEquip.Add(Item.ItemTypePart.Body, bodyid); }
+        if (feetid != "" && !_PlayerEquip.ContainsKey(Item.ItemTypePart.Feet)) { _PlayerEquip.Add(Item.ItemTypePart.Feet, feetid); }
+        if (handsid != "" && !_PlayerEquip.ContainsKey(Item.ItemTypePart.Hands)) { _PlayerEquip.Add(Item.ItemTypePart.Hands, handsid); }
+        if (headid != "" && !_PlayerEquip.ContainsKey(Item.ItemTypePart.Head)) { _PlayerEquip.Add(Item.ItemTypePart.Head, headid); }
+
     }
 
 
@@ -118,29 +161,24 @@ public class GameState : MonoBehaviour
     {
         get
         {
-            foreach(string id in itemNames){
-                if (!_itemPartsCollected.ContainsKey(id))
-                {
-                    _itemPartsCollected.Add(id, PlayerPrefs.GetInt(id+"_Parts", 0));
-                }
-            }
             return _itemPartsCollected;
         }
     }
 
+    public Dictionary<string, int> _itemPartsTotal;
+    public Dictionary<string, int> itemPartsTotal
+    {
+        get
+        {
+            return _itemPartsTotal;
+        }
+    }
 
     public Dictionary<string, bool> _ItemsObtained;
     public Dictionary<string, bool> ItemsObtained
     {
         get
         {
-            foreach (string id in itemNames)
-            {
-                if (!ItemsObtained.ContainsKey(id))
-                {
-                    _ItemsObtained.Add(id, PlayerPrefs.GetInt(id + "_Obtained", 0) == 1);
-                }
-            }
             return _ItemsObtained;
         }
     }
@@ -151,37 +189,6 @@ public class GameState : MonoBehaviour
     {
         get
         {
-            string backid = PlayerPrefs.GetString(Item.ItemTypePart.Back + "", "");
-            string bodyid = PlayerPrefs.GetString(Item.ItemTypePart.Body + "", "");
-            string feetid = PlayerPrefs.GetString(Item.ItemTypePart.Feet + "", "");
-            string handsid = PlayerPrefs.GetString(Item.ItemTypePart.Hands + "", "");
-            string headid = PlayerPrefs.GetString(Item.ItemTypePart.Head + "", "");
-
-            if (backid != "" && !_PlayerEquip.ContainsKey(Item.ItemTypePart.Back))
-            {
-                _PlayerEquip.Add(Item.ItemTypePart.Back, backid);
-            }
-
-            if (bodyid != "" && !_PlayerEquip.ContainsKey(Item.ItemTypePart.Body))
-            {
-                _PlayerEquip.Add(Item.ItemTypePart.Body, bodyid);
-            }
-
-            if (feetid != "" && !_PlayerEquip.ContainsKey(Item.ItemTypePart.Feet))
-            {
-                _PlayerEquip.Add(Item.ItemTypePart.Feet, feetid);
-            }
-
-            if (handsid != "" && !_PlayerEquip.ContainsKey(Item.ItemTypePart.Hands))
-            {
-                _PlayerEquip.Add(Item.ItemTypePart.Hands, handsid);
-            }
-
-            if (headid != "" && !_PlayerEquip.ContainsKey(Item.ItemTypePart.Head))
-            {
-                _PlayerEquip.Add(Item.ItemTypePart.Head, headid);
-            }
-
             return _PlayerEquip;
         }
     }

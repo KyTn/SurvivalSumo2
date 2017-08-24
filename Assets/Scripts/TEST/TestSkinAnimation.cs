@@ -45,7 +45,7 @@ public class TestSkinAnimation : MonoBehaviour {
             nextChangeTime = Time.time + secondsBetweenChange;
         }
 
-
+        if(infoText)
         infoText.text = "Actual animator value: (Piernas:" + sync.Piernas + ", Brazos:" + sync.Brazos + ")\nIndex of Skin Testing: " + index+"\nNext testing in "+(int)(nextChangeTime-Time.time);
 
 	}

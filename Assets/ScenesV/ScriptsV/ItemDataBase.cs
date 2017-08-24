@@ -20,7 +20,7 @@ public class ItemDataBase : MonoBehaviour
             Debug.LogError("ItemDataBase: Solo se puede una instancia de este tipo");
             return;
         }
-
+        DontDestroyOnLoad(gameObject);
         instanceData = this;
         Init();
     }
